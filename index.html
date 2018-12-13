@@ -73,7 +73,6 @@ window.onload = function(){
 	};
 	stop.onclick = function(){
 		clearInterval(timer);
-		// wrap.style.display = 'block';
 		wrap.style.height = '100%';
 		var result = "<span>大吉大利，咱今儿吃<span><br><span style='color:#f22'>"+text.innerHTML+"</span><br><span>老铁们，走起</span>";
 		document.getElementById('result').innerHTML = result;
@@ -81,9 +80,11 @@ window.onload = function(){
 		stop.style.display = 'none';
 		start.style.display = 'block';
 	};
+	wrap.onclick = function(){
+		wrap.style.height = 0;
+	};
 	close.onclick = function(){
 		wrap.style.height = 0;
-		// wrap.style.display = 'none';
 	}
 }
 </script>
